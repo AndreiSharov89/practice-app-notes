@@ -50,5 +50,10 @@ public class MainActivity extends AppCompatActivity {
         notesList.addAll(databaseHelper.getAllNotes());
         notesAdapter.notifyDataSetChanged();
     }
+@Override
+protected void onResume() {
+    super.onResume();
+    loadNotes();  // уже есть — этого достаточно
+}
 
 }
