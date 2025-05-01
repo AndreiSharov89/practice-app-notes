@@ -57,8 +57,7 @@ public class NoteDetailActivity extends AppCompatActivity {
         }
 
         Toast.makeText(this, "Сохранено", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(NoteDetailActivity.this, MainActivity.class);
-        startActivity(intent);
-        finish();
+ setResult(RESULT_OK);
+finish();
     }
 }
